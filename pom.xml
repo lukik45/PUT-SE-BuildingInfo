@@ -35,6 +35,14 @@
         <java.version>11</java.version>
     </properties>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>Github PUT-SE-BuildingInfo Maven Packages</name>
+            <url>https://github.com/lukik45/PUT-SE-BuildingInfo</url>
+        </repository>
+    </distributionManagement>
+
     <dependencies>
 
         <!-- Testing -->
