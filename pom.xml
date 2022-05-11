@@ -1,31 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    ***** *** REGARDING MAVEN ***** ***
+
+    Even though I've been assigned configuring Maven for the project, it is rather a continuous process changing with
+    the stuff we decide to use. I cannot pin down all the stuff we will possibly need, and it's no use adding
+    something which is not actually needed yet. Therefore, it is up to whoever introduces new things to make sure
+    and change the pom.xml accordingly. In case you're facing some doubts or problems, let me know (after consulting
+    uncle Google) and we'll try to figure it out together.
+
+    NOTE - <version> tag is to be increased with each increment
+
+    ***** *** bujowskis
+-->
+
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- left as it came out of the box -->
+    <!-- (left as it came out of the box with the provided architecture) -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.3.3.RELEASE</version>
     </parent>
+    <!-- (all the way here) -->
 
     <groupId>pl.put.poznan</groupId>
     <artifactId>PUT-SE-BuildingInfo</artifactId>
-    <version>0.1</version> <!-- left as it came out of the box, increase with functionalities -->
+    <version>0.0</version> <!-- TODO - increase version with increments -->
 
 	<properties>
         <java.version>11</java.version>
     </properties>
 
-    
     <dependencies>
+
+        <!-- (left as it came out of the box with the provided architecture) -->
         <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -37,21 +53,20 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		
         <dependency>
             <groupId>com.jayway.jsonpath</groupId>
             <artifactId>json-path</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- (all the way here) -->
     </dependencies>
-
 
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <!-- TODO - use below if facing problems with
+                <!-- TODO - COLLECTIVELY consider below if facing problems with
                         "Plugin 'org.springframework.boot:spring-boot-maven-plugin:' not found "
                         , remove otherwise-->
                 <!-- https://stackoverflow.com/questions/64639836/plugin-org-springframework-bootspring-boot-maven-plugin-not-found -->
