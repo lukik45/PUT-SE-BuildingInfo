@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/temp/.idea/PUT-SE-BuildingInfo.iml" filepath="$PROJECT_DIR$/temp/.idea/PUT-SE-BuildingInfo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PUT-SE-BuildingInfo.iml" filepath="$PROJECT_DIR$/PUT-SE-BuildingInfo.iml" />
     </modules>
   </component>
 </project>

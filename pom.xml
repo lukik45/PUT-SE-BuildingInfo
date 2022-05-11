@@ -3,8 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    
-    
+
+    <!-- left as it came out of the box -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -12,8 +12,8 @@
     </parent>
 
     <groupId>pl.put.poznan</groupId>
-    <artifactId>PUT-SE-BuildingInfo</artifactId> <!-- io-project-architecture -->
-    <version>0.1</version>
+    <artifactId>PUT-SE-BuildingInfo</artifactId>
+    <version>0.1</version> <!-- left as it came out of the box, increase with functionalities -->
 
 	<properties>
         <java.version>11</java.version>
@@ -51,6 +51,11 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <!-- TODO - use below if facing problems with
+                        "Plugin 'org.springframework.boot:spring-boot-maven-plugin:' not found "
+                        , remove otherwise-->
+                <!-- https://stackoverflow.com/questions/64639836/plugin-org-springframework-bootspring-boot-maven-plugin-not-found -->
+                <!-- <version>${project.parent.version}</version> -->
             </plugin>
         </plugins>
     </build>
@@ -67,6 +72,5 @@
             <url>https://repo.spring.io/libs-release</url>
         </pluginRepository>
     </pluginRepositories>
-
 
 </project>
