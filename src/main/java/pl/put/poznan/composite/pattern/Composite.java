@@ -10,12 +10,10 @@ public class Composite implements Element{
     List<Element> childElements;
     String name;
     String id;
-    Integer depth;
 
-    public Composite(String _name, String _id, Integer _depth) {
+    public Composite(String _name, String _id) {
         this.name = _name;
         this.id = _id;
-        this.depth = _depth;
         this. childElements = Collections.emptyList();
     }
 
@@ -51,18 +49,11 @@ public class Composite implements Element{
         this.id = id;
     }
 
-    public Integer getDepth() {
-        return depth;
-    }
-
-    public void setDepth(Integer depth) {
-        this.depth = depth;
-    }
 
     @Override
     public String toString(){
-        String s = "\t".repeat(this.depth) + "Name: " + this.name;
-        s += "\t".repeat(this.depth) + "Id: " + this.id;
+        String s = "\t" + "Name: " + this.name;
+        s += "\t" + "Id: " + this.id;
         for(Element t: childElements)
             s += t.toString();
         return s;
