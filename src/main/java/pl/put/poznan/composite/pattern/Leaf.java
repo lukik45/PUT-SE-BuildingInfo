@@ -1,21 +1,24 @@
 package pl.put.poznan.composite.pattern;
 
+import pl.put.poznan.visitor.pattern.Visitor;
+
 public class Leaf implements Element {
 
     private String name;
     private String id;
-    private float area;
-    private float cube;
-    private float heating;
-    private float light;
+    private double area;
+    private double cube;
+    private double heating;
+    private double light;
 
+    public Leaf(){};
     public Leaf(String _name, String _id, String _area, String _cube, String _heating, String _light){
         this.name = _name;
         this.id = _id;
-        this.area = Float.parseFloat(_area);
-        this.cube = Float.parseFloat(_cube);
-        this.heating = Float.parseFloat(_heating);
-        this.light = Float.parseFloat(_light);
+        this.area = Double.parseDouble(_area);
+        this.cube = Double.parseDouble(_cube);
+        this.heating = Double.parseDouble(_heating);
+        this.light = Double.parseDouble(_light);
     }
 
     public String getName() {
@@ -34,35 +37,35 @@ public class Leaf implements Element {
         this.id = id;
     }
 
-    public float getArea() {
+    public double getArea() {
         return area;
     }
 
-    public void setArea(float area) {
+    public void setArea(double area) {
         this.area = area;
     }
 
-    public float getCube() {
+    public double getCube() {
         return cube;
     }
 
-    public void setCube(float cube) {
+    public void setCube(double cube) {
         this.cube = cube;
     }
 
-    public float getHeating() {
+    public double getHeating() {
         return heating;
     }
 
-    public void setHeating(float heating) {
+    public void setHeating(double heating) {
         this.heating = heating;
     }
 
-    public float getLight() {
+    public double getLight() {
         return light;
     }
 
-    public void setLight(float light) {
+    public void setLight(double light) {
         this.light = light;
     }
 
@@ -75,5 +78,10 @@ public class Leaf implements Element {
         s += "heating: " + this.heating;
         s += "light: " + this.light;
         return s;
+    }
+
+    @Override
+    public double accept(Visitor v) {
+        return v.visit(this);
     }
 }
