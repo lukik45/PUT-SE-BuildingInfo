@@ -29,7 +29,7 @@
 
     <groupId>pl.put.poznan</groupId>
     <artifactId>PUT-SE-BuildingInfo</artifactId>
-    <version>0.0</version> <!-- TODO - increase version with increments -->
+    <version>0.1</version> <!-- TODO - increase version with increments -->
 
 	<properties>
         <java.version>11</java.version>
@@ -81,6 +81,13 @@
             <scope>test</scope>
         </dependency>
         <!-- (all the way here) -->
+
+        <!-- (for JSON class) -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20210307</version>
+        </dependency>
     </dependencies>
 
     <build>
