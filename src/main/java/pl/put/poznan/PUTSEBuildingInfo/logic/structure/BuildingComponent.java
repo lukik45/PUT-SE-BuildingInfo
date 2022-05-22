@@ -1,6 +1,6 @@
 package pl.put.poznan.PUTSEBuildingInfo.logic.structure;
 
-import java.util.ArrayList;
+import pl.put.poznan.PUTSEBuildingInfo.logic.visitors.Visitor;
 
 public interface BuildingComponent {
 

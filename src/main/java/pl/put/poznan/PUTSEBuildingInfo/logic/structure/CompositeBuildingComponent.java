@@ -1,9 +1,8 @@
 package pl.put.poznan.PUTSEBuildingInfo.logic.structure;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import pl.put.poznan.PUTSEBuildingInfo.logic.visitors.Visitor;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class CompositeBuildingComponent implements BuildingComponent {
 

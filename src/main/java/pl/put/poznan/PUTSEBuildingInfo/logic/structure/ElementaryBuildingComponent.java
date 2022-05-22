@@ -1,5 +1,7 @@
 package pl.put.poznan.PUTSEBuildingInfo.logic.structure;
 
+import pl.put.poznan.PUTSEBuildingInfo.logic.visitors.Visitor;
+
 /**
  * Represents Leaf in Composite design pattern
  * In our case it refers only to the room, since room is the only leaf structure  in our model

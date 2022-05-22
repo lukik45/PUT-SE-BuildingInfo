@@ -1,4 +1,9 @@
-package pl.put.poznan.PUTSEBuildingInfo.logic.structure;
+package pl.put.poznan.PUTSEBuildingInfo.logic.visitors;
+
+import pl.put.poznan.PUTSEBuildingInfo.logic.structure.BuildingComponent;
+import pl.put.poznan.PUTSEBuildingInfo.logic.structure.CompositeBuildingComponent;
+import pl.put.poznan.PUTSEBuildingInfo.logic.structure.ElementaryBuildingComponent;
+import pl.put.poznan.PUTSEBuildingInfo.logic.visitors.Visitor;
 
 public class IdVisitor implements Visitor {
     int searchedId;
