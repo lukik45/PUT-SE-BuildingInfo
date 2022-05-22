@@ -1,0 +1,5 @@
+pl.put.poznan.PUTSEBuildingInfo
+pl.put.poznan.PUTSEBuildingInfo.logic.structure
+pl.put.poznan.PUTSEBuildingInfo.logic.structure.concreteStructures
+pl.put.poznan.PUTSEBuildingInfo.logic.visitors
+pl.put.poznan.PUTSEBuildingInfo.RESTapi

@@ -1,9 +1,11 @@
 D:\AI\_Semester_IV\SoftwareEngineering\_project\src\main\java\pl\put\poznan\PUTSEBuildingInfo\logic\structure\BuildingComponent.java
 D:\AI\_Semester_IV\SoftwareEngineering\_project\src\main\java\pl\put\poznan\PUTSEBuildingInfo\logic\structure\CompositeBuildingComponent.java
 D:\AI\_Semester_IV\SoftwareEngineering\_project\src\main\java\pl\put\poznan\PUTSEBuildingInfo\RESTapi\BuildingController.java
+D:\AI\_Semester_IV\SoftwareEngineering\_project\src\main\java\pl\put\poznan\PUTSEBuildingInfo\logic\visitors\HeatVisitor.java
 D:\AI\_Semester_IV\SoftwareEngineering\_project\src\main\java\pl\put\poznan\PUTSEBuildingInfo\PutSeBuildingInfoApplication.java
 D:\AI\_Semester_IV\SoftwareEngineering\_project\src\main\java\pl\put\poznan\PUTSEBuildingInfo\logic\structure\concreteStructures\Building.java
+D:\AI\_Semester_IV\SoftwareEngineering\_project\src\main\java\pl\put\poznan\PUTSEBuildingInfo\logic\visitors\Visitor.java
+D:\AI\_Semester_IV\SoftwareEngineering\_project\src\main\java\pl\put\poznan\PUTSEBuildingInfo\logic\visitors\IdVisitor.java
 D:\AI\_Semester_IV\SoftwareEngineering\_project\src\main\java\pl\put\poznan\PUTSEBuildingInfo\logic\structure\concreteStructures\Room.java
 D:\AI\_Semester_IV\SoftwareEngineering\_project\src\main\java\pl\put\poznan\PUTSEBuildingInfo\logic\structure\ElementaryBuildingComponent.java
 D:\AI\_Semester_IV\SoftwareEngineering\_project\src\main\java\pl\put\poznan\PUTSEBuildingInfo\logic\structure\concreteStructures\Floor.java
-D:\AI\_Semester_IV\SoftwareEngineering\_project\src\main\java\pl\put\poznan\PUTSEBuildingInfo\logic\structure\Visitor.java

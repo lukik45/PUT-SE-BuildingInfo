@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"pl.put.poznan.PUTSEBuildingInfo"},{"l":"pl.put.poznan.PUTSEBuildingInfo.logic.structure"},{"l":"pl.put.poznan.PUTSEBuildingInfo.logic.structure.concreteStructures"},{"l":"pl.put.poznan.PUTSEBuildingInfo.logic.visitors"},{"l":"pl.put.poznan.PUTSEBuildingInfo.RESTapi"}]
