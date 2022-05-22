@@ -5,13 +5,12 @@ import pl.put.poznan.transformer.interfaces.Visitor;
 
 import java.util.Arrays;
 
-/** Represents a building. Allows calculating and obtaining information about the building.
- * @since 0.1
+/** Allows calculation regarding building info 
  */
 
 public class Building extends Location implements Visitable {
 
-    /** Represents list of levels the building consists of.
+    /** list of levels
    */
   private Level[] levels;
 
@@ -19,7 +18,7 @@ public class Building extends Location implements Visitable {
       this.levels = levels;
   }
   /**
-   * <p>Gets list of levels that building consists of.</p>
+   * Gets list of levels that building consists of.
    * @return A float representing total area of the building.
    */
   public Level[] getLevels() {
@@ -27,7 +26,7 @@ public class Building extends Location implements Visitable {
   }
 
   /**
-   * <p>Visitor method.</p>
+   * Visitor method.
    */
   @Override
   public void accept(Visitor visitor){
@@ -35,7 +34,7 @@ public class Building extends Location implements Visitable {
   }
 
   /**
-   * <p>Gets total area of the building.</p>
+   * Gets total area of the building.
    * @return A float representing total area of the building.
    */
   public float getArea() {
@@ -48,7 +47,7 @@ public class Building extends Location implements Visitable {
   }
 
   /**
-   * <p>Gets total volume of the building.</p>
+   * Gets total volume of the building.
    * @return A float representing total volume of the building.
    */
   public float getVolume() {
@@ -60,7 +59,7 @@ public class Building extends Location implements Visitable {
   }
 
   /**
-   * <p>Gets lighting power of the building.</p>
+   * Gets lighting power of the building.
    * @return A float representing lighting power per square meter.
    */
   public float getIlluminationPower() {

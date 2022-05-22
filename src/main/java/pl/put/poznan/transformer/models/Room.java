@@ -1,6 +1,6 @@
 package pl.put.poznan.transformer.models;
 /** Represents a room. Allows obtaining information about the room.
- * @since 0.1
+ 
  */
 
 public class Room extends Location {
@@ -34,7 +34,7 @@ public class Room extends Location {
 
   /**
    *  Gets area of the room. 
-   * @return A float representing total area of the room.
+   * @return A float representing total area
    */
   public float getArea() {
     return area;
@@ -42,7 +42,7 @@ public class Room extends Location {
 
   /**
    *  Gets volume of the room. 
-   * @return A float representing total volume of the room.
+   * @return A float representing total volume 
    */
   public float getVolume() {
     return volume;
@@ -54,7 +54,7 @@ public class Room extends Location {
 
   /**
    *  Gets lighting power of the room. 
-   * @return A float representing lighting power per square meter.
+   * @return A float representing lighting power
    */
   public float getIlluminationPower() {
     return illuminationPower;

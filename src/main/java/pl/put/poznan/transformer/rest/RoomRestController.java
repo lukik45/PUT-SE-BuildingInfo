@@ -8,9 +8,7 @@ import pl.put.poznan.transformer.models.Room;
 /**
  * Representation of a spring REST controller for Rooms.
  * 
- * @since 0.2
- * @see BuildingInfoController
- * @see Room
+
  */
 @RestController
 @RequestMapping("/room")

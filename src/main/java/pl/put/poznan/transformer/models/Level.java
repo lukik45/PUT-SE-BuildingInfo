@@ -3,18 +3,18 @@ package pl.put.poznan.transformer.models;
 import java.util.Arrays;
 
 
-/** Represents a building level. Allows calculating and obtaining information about the level.
- * @since 0.1
+/** calculation allowed
+
 */
 public class Level extends Location {
 
-  /** Represents list of rooms that level consists of.
+  /** list of rooms 
   */
   private Room[] rooms;
 
   /**
-  *  Gets list of rooms that level consists of. 
-  * @return A float representing total area of all rooms that level consists of.
+  *  Gets list of rooms that level 
+  * @return A float representing total area of 
   */
   public Room[] getRooms() {
     return rooms;
@@ -24,8 +24,8 @@ public class Level extends Location {
       this.rooms = _rooms;
   }
   /**
-  *  Gets total area of level. 
-  * @return A float representing total area of all rooms that level consists of.
+  *  total area of level. 
+  * @return A float representing total area 
   */
   public float getArea() {
     float area = 0;
@@ -38,7 +38,7 @@ public class Level extends Location {
 
   /**
   *  Gets total volume of level. 
-  * @return A float representing total volume of all rooms that level consists of.
+  * @return A float representing total volume 
   */
   public float getVolume() {
     float totalVolume = 0;
@@ -50,7 +50,7 @@ public class Level extends Location {
 
     /**
      *  Gets total heating power of level. 
-     * @return A float representing total heating power of all rooms that level consists of.
+     * @return A float representing total heating power 
      */
     public float getHeatingPowerConsumption() {
         float totalHeating = 0;
@@ -62,7 +62,7 @@ public class Level extends Location {
 
   /**
   *  Gets lighting power of level. 
-  * @return A float representing lighting power per square meter.
+  * @return A float representing lighting power 
   */
   public float getIlluminationPower() {
     float power = 0;

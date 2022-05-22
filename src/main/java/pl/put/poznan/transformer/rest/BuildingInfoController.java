@@ -10,27 +10,25 @@ import pl.put.poznan.transformer.models.Location;
 import java.util.List;
 
 /**
- * Generic representation of a spring REST controller for locations. Comes with
- * three endpoints for classess extending Locations like Room, Building etc.
+ * Generic representation of a spring REST controller
+ * three endpoints for classess
  * 
- * @since 0.2
- * @see Location
+
  */
 @RestController
 public abstract class BuildingInfoController<T extends Location> {
 
     /**
-     * Represents slf4j logger utility.
+     * slf4j logger activity 
      */
     public static final Logger logger = LoggerFactory.getLogger(BuildingInfoController.class);
 
     /**
      *  
-     * Gets total area of the location.
+     * Gets total area
      *  
      * 
-     * @param location body of the location
-     * @return A float representing total area of the location.
+     * 
      */
     @RequestMapping(value = "/get_area", method = RequestMethod.POST, produces = "application/json")
     public float getArea(@RequestBody T location) {
@@ -40,11 +38,7 @@ public abstract class BuildingInfoController<T extends Location> {
 
     /**
      *  
-     * Gets total volume of the location.
-     *  
-     * 
-     * @param location body of the location
-     * @return A float representing total volume of the location.
+     * Gets total volume
      */
     @RequestMapping(value = "/get_volume", method = RequestMethod.POST, produces = "application/json")
     public float getVolume(@RequestBody T location) {
@@ -52,14 +46,6 @@ public abstract class BuildingInfoController<T extends Location> {
         return location.getVolume();
     }
 
-    /**
-     *  
-     * Gets total illumination power of the location.
-     *  
-     * 
-     * @param location body of the location
-     * @return A float representing total illumination power of the location.
-     */
     @RequestMapping(value = "/get_illumination_power", method = RequestMethod.POST, produces = "application/json")
     public float getIlluminationPower(@RequestBody T location) {
         logger.debug("User requests data of building with id = " + location.getId() + " and name = " + location.getName());
@@ -69,10 +55,6 @@ public abstract class BuildingInfoController<T extends Location> {
     /**
      *  
      * Sorts children locations
-     *  
-     * 
-     * @param location body of the location
-     * @param parameter key used for the sort function
      * @return A location with sorted children.
      */
     @RequestMapping(value = "/sortRooms", method = RequestMethod.POST, produces = "application/json")
@@ -85,10 +67,6 @@ public abstract class BuildingInfoController<T extends Location> {
     /**
      *  
      * Sorts using closest area
-     *  
-     * 
-     * @param location body of the location
-     * @param area key used for the sort function
      * @return A location with sorted children using closest area key.
      */
     @RequestMapping(value = "/sortByClosestArea", method = RequestMethod.POST, produces = "application/json")
