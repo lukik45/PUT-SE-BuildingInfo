@@ -1,0 +1,10 @@
+pl\put\poznan\visitor\pattern\areaVisitor.class
+pl\put\poznan\composite\pattern\Leaf.class
+pl\put\poznan\visitor\pattern\lightVisitor.class
+pl\put\poznan\visitor\pattern\cubeVisitor.class
+pl\put\poznan\composite\pattern\Element.class
+pl\put\poznan\nonApiDemo.class
+pl\put\poznan\visitor\pattern\Visitor.class
+pl\put\poznan\composite\pattern\Composite.class
+pl\put\poznan\visitor\pattern\heatingVisitor.class
+pl\put\poznan\visitor\pattern\printVisitor.class
