@@ -12,7 +12,6 @@ import java.util.ArrayList;
 
 /**
  * This class serves as the REST controller for our application
- *
  */
 @RequestMapping("/api/v1/building")
 @RestController

@@ -6,6 +6,10 @@ import pl.put.poznan.PUTSEBuildingInfo.logic.structure.ElementaryBuildingCompone
 
 import java.util.ArrayList;
 
+/**
+ * Class used by {@link Floor#Floor(java.lang.String, int, java.util.ArrayList)}
+ * Required to properly parse JSON input from POST request
+ */
 public class Room extends ElementaryBuildingComponent {
 
 

@@ -12,9 +12,6 @@ public class CompositeBuildingComponent implements BuildingComponent {
     protected ArrayList<Integer> childrenInts;
 
 
-    /**
-     * Recursively checks the area of all children and returns the total area
-     */
     @Override
     public double checkArea(int level) {
         double totalArea = 0.0;
@@ -67,6 +64,7 @@ public class CompositeBuildingComponent implements BuildingComponent {
                 ", children=" + children +
                 '}';
     }
+
 
     public String getName() {
         return name;

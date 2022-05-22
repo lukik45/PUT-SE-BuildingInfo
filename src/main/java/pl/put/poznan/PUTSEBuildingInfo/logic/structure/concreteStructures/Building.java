@@ -7,6 +7,10 @@ import pl.put.poznan.PUTSEBuildingInfo.logic.structure.concreteStructures.Floor;
 
 import java.util.ArrayList;
 
+/**
+ * Class used by {@link pl.put.poznan.PUTSEBuildingInfo.RESTapi.BuildingController#checkAreaGivenId(int)}
+ * Required to properly parse JSON input from POST request
+ */
 public class Building extends CompositeBuildingComponent {
 
     Building (

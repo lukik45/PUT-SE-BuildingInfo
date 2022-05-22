@@ -5,6 +5,9 @@ import pl.put.poznan.PUTSEBuildingInfo.logic.structure.CompositeBuildingComponen
 import pl.put.poznan.PUTSEBuildingInfo.logic.structure.ElementaryBuildingComponent;
 import pl.put.poznan.PUTSEBuildingInfo.logic.visitors.Visitor;
 
+/**
+ * Class used to traverse the structure of the building in order to find the component with a given ID
+ */
 public class IdVisitor implements Visitor {
     int searchedId;
     BuildingComponent foundBuildingComponent;

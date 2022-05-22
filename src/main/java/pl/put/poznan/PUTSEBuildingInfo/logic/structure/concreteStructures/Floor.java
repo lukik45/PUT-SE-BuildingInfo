@@ -7,6 +7,13 @@ import pl.put.poznan.PUTSEBuildingInfo.logic.structure.concreteStructures.Room;
 
 import java.util.ArrayList;
 
+
+
+
+/**
+ * Class used by {@link Building#Building(java.lang.String, int, java.util.ArrayList)}
+ * Required to properly parse JSON input from POST request
+ */
 public class Floor extends CompositeBuildingComponent {
 
     Floor (

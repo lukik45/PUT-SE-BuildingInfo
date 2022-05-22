@@ -27,6 +27,11 @@ public class ElementaryBuildingComponent implements BuildingComponent {
         return area;
     }
 
+    /**
+     * Returns the volume
+     * @param level - just a helper variable to pretty print the topology of search
+     * @return the volume of the ele
+     */
     @Override
     public double checkVolume(int level) {
         String tab = "\t";
@@ -34,18 +39,28 @@ public class ElementaryBuildingComponent implements BuildingComponent {
         return cube;
     }
 
+    /**
+     *
+     * @param level - just a helper variable to pretty print the topology of search
+     * @return
+     */
     @Override
     public double calculateHeatingEnergy(int level) {
         String tab = "\t";
-        System.out.println(tab.repeat(level) +  name + " heating:" +  heating );
-        return heating;
+        System.out.println(tab.repeat(level) +  name + " heating/volume:" +  heating/cube );
+        return heating/cube;
     }
 
+    /**
+     *
+     * @param level just a helper variable to pretty print the topology of search
+     * @return Light
+     */
     @Override
     public double calculateLightningPower(int level) {
         String tab = "\t";
-        System.out.println(tab.repeat(level) +  name + " light=" +  light);
-        return light;
+        System.out.println(tab.repeat(level) +  name + " light/area=" +  light/area);
+        return light/area;
     }
 
     @Override

@@ -1,44 +1,43 @@
-[
-  {
-    "name": "one medium building",
-    "id": "1",
-    "children": [
-      {
-        "name": "First floor",
-        "id": "11",
-        "children": [
-          {
-            "name": "First room",
-            "id": "111",
-            "area": "30.0",
-            "cube": "75.0",
-            "heating": "1550.95",
-            "light": "2000.0"
-          },
-          {
-            "name": "Second room",
-            "id": "112",
-            "area": "40.0",
-            "cube": "5.0",
-            "heating": "150.95",
-            "light": "100.0"
-          }
-        ]
-      },
-      {
-        "name": "Second floor",
-        "id": "12",
-        "children": [
-          {
-            "name": "First room",
-            "id": "121",
-            "area": "40.0",
-            "cube": "85.0",
-            "heating": "550.95",
-            "light": "200.0"
-          }
-        ]
-      }
-    ]
-  }
-]
+
+{
+  "name": "one medium building",
+  "id": "1",
+  "children": [
+    {
+      "name": "First floor",
+      "id": "11",
+      "children": [
+        {
+          "name": "First room",
+          "id": "111",
+          "area": "30.0",
+          "cube": "75.0",
+          "heating": "1550.95",
+          "light": "2000.0"
+        },
+        {
+          "name": "Second room",
+          "id": "112",
+          "area": "40.0",
+          "cube": "5.0",
+          "heating": "150.95",
+          "light": "100.0"
+        }
+      ]
+    },
+    {
+      "name": "Second floor",
+      "id": "12",
+      "children": [
+        {
+          "name": "First room",
+          "id": "121",
+          "area": "40.0",
+          "cube": "85.0",
+          "heating": "550.95",
+          "light": "200.0"
+        }
+      ]
+    }
+  ]
+}
