@@ -48,7 +48,7 @@ public class ElementaryBuildingComponent implements BuildingComponent {
     public double calculateHeatingEnergy(int level) {
         String tab = "\t";
         System.out.println(tab.repeat(level) +  name + " heating/volume:" +  heating/cube );
-        return heating/cube;
+        return heating;
     }
 
     /**
@@ -60,7 +60,7 @@ public class ElementaryBuildingComponent implements BuildingComponent {
     public double calculateLightningPower(int level) {
         String tab = "\t";
         System.out.println(tab.repeat(level) +  name + " light/area=" +  light/area);
-        return light/area;
+        return light;
     }
 
     @Override

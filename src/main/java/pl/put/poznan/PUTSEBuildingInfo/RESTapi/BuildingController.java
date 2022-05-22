@@ -57,7 +57,7 @@ public class BuildingController {
         // look for the component with the given id
         entireBuilding.accept(idVisitor);
         if (idVisitor.getFoundBuildingComponent() != null) {
-            return idVisitor.getFoundBuildingComponent().calculateHeatingEnergy();
+            return idVisitor.getFoundBuildingComponent().calculateHeatingEnergy()/idVisitor.getFoundBuildingComponent().checkVolume();
         } else {
             return -1;
         }
@@ -70,7 +70,7 @@ public class BuildingController {
         // look for the component with the given id
         entireBuilding.accept(idVisitor);
         if (idVisitor.getFoundBuildingComponent() != null) {
-            return idVisitor.getFoundBuildingComponent().calculateLightningPower();
+            return idVisitor.getFoundBuildingComponent().calculateLightningPower()/idVisitor.getFoundBuildingComponent().checkArea();
         } else {
             return -1;
         }
