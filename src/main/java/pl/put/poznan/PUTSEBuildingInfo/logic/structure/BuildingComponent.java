@@ -24,4 +24,7 @@ public interface BuildingComponent {
     }
     double calculateLightningPower(int level);
 
+    void accept(Visitor v);
+
+
 }

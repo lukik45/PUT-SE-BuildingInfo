@@ -7,7 +7,7 @@ package pl.put.poznan.PUTSEBuildingInfo.logic.structure;
 public class ElementaryBuildingComponent implements BuildingComponent {
 
     protected String name;
-    protected String id;
+    protected int id;
     protected float area;
     protected float cube;
     protected float heating;
@@ -46,6 +46,11 @@ public class ElementaryBuildingComponent implements BuildingComponent {
         return light;
     }
 
+    @Override
+    public void accept(Visitor v) {
+        v.visitElementaryBuildingComponent(this);
+    }
+
 
     @Override
     public String toString() {
@@ -57,5 +62,29 @@ public class ElementaryBuildingComponent implements BuildingComponent {
                 ", heating=" + heating +
                 ", light=" + light +
                 '}';
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public float getArea() {
+        return area;
+    }
+
+    public float getCube() {
+        return cube;
+    }
+
+    public float getHeating() {
+        return heating;
+    }
+
+    public float getLight() {
+        return light;
     }
 }

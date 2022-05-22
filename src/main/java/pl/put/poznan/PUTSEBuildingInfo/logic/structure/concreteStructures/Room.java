@@ -11,7 +11,7 @@ public class Room extends ElementaryBuildingComponent {
 
     public Room(
             @JsonProperty("name") String name,
-            @JsonProperty("id") String id,
+            @JsonProperty("id") int id,
             @JsonProperty("area") float area,
             @JsonProperty("cube") float cube,
             @JsonProperty("heating") float heating,

@@ -2,6 +2,7 @@ package pl.put.poznan.PUTSEBuildingInfo.RESTapi;
 
 
 import org.springframework.web.bind.annotation.*;
+import pl.put.poznan.PUTSEBuildingInfo.logic.structure.IdVisitor;
 import pl.put.poznan.PUTSEBuildingInfo.logic.structure.concreteStructures.Building;
 import pl.put.poznan.PUTSEBuildingInfo.logic.structure.CompositeBuildingComponent;
 
@@ -23,7 +24,14 @@ public class BuildingController {
     @GetMapping(path= "/area/{id}")
     public double checkAreaGivenId(@PathVariable("id") int id) {
         System.out.println(id);
-        return entireBuilding.checkArea();
+        IdVisitor idVisitor = new IdVisitor(id);
+        // look for the component with the given id
+        entireBuilding.accept(idVisitor);
+        if (idVisitor.getFoundBuildingComponent() != null) {
+            return idVisitor.getFoundBuildingComponent().checkArea();
+        } else {
+            return -1;
+        }
     }
 
 

@@ -68,4 +68,20 @@ public class CompositeBuildingComponent implements BuildingComponent {
                 ", children=" + children +
                 '}';
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public ArrayList<BuildingComponent> getChildren() {
+        return children;
+    }
+
+    public void accept(Visitor v) {
+        v.visitCompositeBuildingComponent(this);
+    }
 }
