@@ -2,11 +2,11 @@
   {
     "name": "one medium building",
     "id": "1",
-    "floors": [
+    "children": [
       {
         "name": "First floor",
         "id": "11",
-        "rooms": [
+        "children": [
           {
             "name": "First room",
             "id": "111",
@@ -28,7 +28,7 @@
       {
         "name": "Second floor",
         "id": "12",
-        "rooms": [
+        "children": [
           {
             "name": "First room",
             "id": "121",
@@ -36,26 +36,6 @@
             "cube": "85.0",
             "heating": "550.95",
             "light": "200.0"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Second one room building",
-    "id": "2",
-    "floors": [
-      {
-        "name": "First floor",
-        "id": "21",
-        "rooms": [
-          {
-            "name": "First room",
-            "id": "221",
-            "area": "30.0",
-            "cube": "75.0",
-            "heating": "1550.95",
-            "light": "2000.0"
           }
         ]
       }

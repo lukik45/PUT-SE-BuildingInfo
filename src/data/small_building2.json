@@ -1,0 +1,20 @@
+{
+  "name": "Second one room building",
+  "id": "2",
+  "children": [
+    {
+      "name": "First floor",
+      "id": "21",
+      "children": [
+        {
+          "name": "First room",
+          "id": "221",
+          "area": "30.0",
+          "cube": "75.0",
+          "heating": "1550.95",
+          "light": "2000.0"
+        }
+      ]
+    }
+  ]
+}
