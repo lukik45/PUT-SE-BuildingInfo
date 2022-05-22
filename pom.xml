@@ -29,7 +29,7 @@
 
     <groupId>pl.put.poznan</groupId>
     <artifactId>PUT-SE-BuildingInfo</artifactId>
-    <version>0.2</version> <!-- TODO - increase version with increments -->
+    <version>1.0</version> <!-- TODO - increase version with increments -->
 
 	<properties>
         <java.version>11</java.version>
