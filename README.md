@@ -1,5 +1,9 @@
 # PUT-SE-BuildingInfo
 
+Release: 
+
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/lukik45/PUT-SE-BuildingInfo?display_name=tag&style=plastic)
+
 Automatic build and tests status:
 
 ![abts-workflow](https://github.com/lukik45/PUT-SE-BuildingInfo/actions/workflows/ci.yml/badge.svg)
