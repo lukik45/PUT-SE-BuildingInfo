@@ -37,22 +37,49 @@ public class CompositeBuildingComponent implements BuildingComponent {
     @Override
     public double calculateHeatingEnergy(int level) {
         double totalHeating = 0.0;
+        double totalVolume = 0.0;
         for (BuildingComponent child : children) {
-            totalHeating += child.calculateHeatingEnergy(level+1);
+            totalHeating += child.getHeating(level+1);
+        }
+        for (BuildingComponent child : children) {
+            totalVolume += child.checkVolume(level+1);
         }
         String tab = "\t";
-        System.out.println(tab.repeat(level) +  name + " energy=" + totalHeating);
-        return totalHeating;
+        System.out.println(tab.repeat(level) +  name + " energy/volume=" + totalHeating/totalVolume);
+        return totalHeating/totalVolume;
     }
 
     @Override
     public double calculateLightningPower(int level) {
         double totalLight = 0.0;
+        double totalArea = 0.0;
         for (BuildingComponent child : children) {
-            totalLight += child.calculateLightningPower(level+1);
+            totalLight += child.getLight(level+1);
+        }
+        for (BuildingComponent child : children) {
+            totalArea += child.checkArea(level+1);
         }
         String tab = "\t";
-        System.out.println(tab.repeat(level) +  name + " area=" + totalLight);
+        System.out.println(tab.repeat(level) +  name + " light/area=" + totalLight/totalArea);
+        return totalLight/totalArea;
+    }
+
+    @Override
+    public double getHeating(int level){
+        double totalHeating = 0.0;
+        for (BuildingComponent child : children) {
+            totalHeating += child.getHeating(level+1);
+        }
+        return totalHeating;
+    }
+
+
+    @Override
+    public double getLight(int level){
+        double totalLight = 0.0;
+        for (BuildingComponent child : children) {
+            totalLight += child.getLight(level+1);
+        }
         return totalLight;
     }
 

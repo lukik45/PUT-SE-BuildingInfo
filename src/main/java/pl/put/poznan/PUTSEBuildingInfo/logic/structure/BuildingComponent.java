@@ -49,5 +49,8 @@ public interface BuildingComponent {
      */
     void accept(Visitor v);
 
+    double getLight(int level);
+    double getHeating(int level);
+
 
 }
