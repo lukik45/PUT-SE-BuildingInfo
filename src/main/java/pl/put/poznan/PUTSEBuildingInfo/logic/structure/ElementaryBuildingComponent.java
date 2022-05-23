@@ -63,6 +63,7 @@ public class ElementaryBuildingComponent implements BuildingComponent {
         return light/area;
     }
 
+
     @Override
     public void accept(Visitor v) {
         v.visitElementaryBuildingComponent(this);
@@ -97,11 +98,22 @@ public class ElementaryBuildingComponent implements BuildingComponent {
         return cube;
     }
 
-    public float getHeating() {
+    @Override
+    public double getHeating(int level) {
         return heating;
     }
 
-    public float getLight() {
+    @Override
+    public double getLight(int level) {
+        return light;
+    }
+
+
+    public double getHeating() {
+        return heating;
+    }
+
+    public double getLight() {
         return light;
     }
 }
