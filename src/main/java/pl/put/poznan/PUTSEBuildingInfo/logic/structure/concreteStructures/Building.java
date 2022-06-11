@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class Building extends CompositeBuildingComponent {
 
-    Building (
+    public Building(
             @JsonProperty("name") String name,
             @JsonProperty("id") int id,
             @JsonProperty("children") ArrayList<Floor> children) {

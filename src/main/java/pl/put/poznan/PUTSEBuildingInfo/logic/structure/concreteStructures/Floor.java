@@ -16,7 +16,7 @@ import java.util.ArrayList;
  */
 public class Floor extends CompositeBuildingComponent {
 
-    Floor (
+    public Floor(
             @JsonProperty("name") String name,
             @JsonProperty("id") int id,
             @JsonProperty("children") ArrayList<Room> children) {
