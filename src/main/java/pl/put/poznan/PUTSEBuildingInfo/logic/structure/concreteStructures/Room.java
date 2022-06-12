@@ -12,7 +12,15 @@ import java.util.ArrayList;
  */
 public class Room extends ElementaryBuildingComponent {
 
-
+    /**
+     * Constructor of the Room
+     * @param name name of the room
+     * @param id id of the room
+     * @param area area of the room
+     * @param cube volume of the room
+     * @param heating heating power, required to heat this room
+     * @param light light power, required to light this room
+     */
     public Room(
             @JsonProperty("name") String name,
             @JsonProperty("id") int id,

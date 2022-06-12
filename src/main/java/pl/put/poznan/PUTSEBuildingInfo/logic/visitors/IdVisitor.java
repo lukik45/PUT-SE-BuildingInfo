@@ -12,11 +12,19 @@ public class IdVisitor implements Visitor {
     int searchedId;
     BuildingComponent foundBuildingComponent;
 
+    /**
+     * Constructor of the visitor
+     * @param searchedId id of the searched component
+     */
     public IdVisitor(int searchedId) {
         this.searchedId = searchedId;
         this.foundBuildingComponent = null;
     }
 
+    /**
+     * Implementation of the visit method, if visitor visits the CompositeBuildingComponent
+     * @param cbc visited CompositeBuildingComponent
+     */
     public void visitCompositeBuildingComponent(CompositeBuildingComponent cbc) {
         if (cbc.getId() == searchedId){
             foundBuildingComponent = cbc;
@@ -31,7 +39,10 @@ public class IdVisitor implements Visitor {
             }
         }
     }
-
+    /**
+     * Implementation of the visit method, if visitor visits the ElementaryBuildingComponent
+     * @param ebc visited ElementaryBuildingComponent
+     */
     public void visitElementaryBuildingComponent(ElementaryBuildingComponent ebc) {
         if (ebc.getId() == searchedId) {
             foundBuildingComponent = ebc;

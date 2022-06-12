@@ -12,7 +12,12 @@ import java.util.ArrayList;
  * Required to properly parse JSON input from POST request
  */
 public class Building extends CompositeBuildingComponent {
-
+    /**
+     * Constructor of the building
+     * @param name name of the building
+     * @param id id of the building
+     * @param children list of floors, that this building contains
+     */
     public Building(
             @JsonProperty("name") String name,
             @JsonProperty("id") int id,

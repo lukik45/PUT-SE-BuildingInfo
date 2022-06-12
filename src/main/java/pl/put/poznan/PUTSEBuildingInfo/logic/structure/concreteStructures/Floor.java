@@ -15,7 +15,12 @@ import java.util.ArrayList;
  * Required to properly parse JSON input from POST request
  */
 public class Floor extends CompositeBuildingComponent {
-
+    /**
+     * Constructor of the room
+     * @param name name of the room
+     * @param id id of the room
+     * @param children list of Rooms, that this floor contains
+     */
     public Floor(
             @JsonProperty("name") String name,
             @JsonProperty("id") int id,

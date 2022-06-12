@@ -17,7 +17,9 @@ public class ElementaryBuildingComponent implements BuildingComponent {
 
 
     /**
-     * Returns the area of the elementary building component
+     * Calculates the area of the room
+     * @param level just a helper variable to pretty print the topology of search
+     * @return area of the room
      */
     @Override
     public double checkArea(int level) {
@@ -28,9 +30,9 @@ public class ElementaryBuildingComponent implements BuildingComponent {
     }
 
     /**
-     * Returns the volume
-     * @param level - just a helper variable to pretty print the topology of search
-     * @return the volume of the ele
+     * Calculates the volume of the room
+     * @param level just a helper variable to pretty print the topology of search
+     * @return volume of the room
      */
     @Override
     public double checkVolume(int level) {
@@ -40,9 +42,9 @@ public class ElementaryBuildingComponent implements BuildingComponent {
     }
 
     /**
-     *
-     * @param level - just a helper variable to pretty print the topology of search
-     * @return
+     * Calculates the average heating power per unit of the volume
+     * @param level just a helper variable to pretty print the topology of search
+     * @return heating power divided by the volume of the room
      */
     @Override
     public double calculateHeatingEnergy(int level) {
@@ -52,9 +54,9 @@ public class ElementaryBuildingComponent implements BuildingComponent {
     }
 
     /**
-     *
+     * Calculates average light power per unit of the area
      * @param level just a helper variable to pretty print the topology of search
-     * @return Light
+     * @return light power divided by the area of the room
      */
     @Override
     public double calculateLightningPower(int level) {
@@ -63,7 +65,10 @@ public class ElementaryBuildingComponent implements BuildingComponent {
         return light/area;
     }
 
-
+    /**
+     * Invokes the proper implementation of visit method
+     * @param v the visitor object
+     */
     @Override
     public void accept(Visitor v) {
         v.visitElementaryBuildingComponent(this);

@@ -49,6 +49,11 @@ public interface BuildingComponent {
      */
     void accept(Visitor v);
 
+    /**
+     *
+     * @param level
+     * @return
+     */
     double getLight(int level);
     double getHeating(int level);
 
